@@ -34,7 +34,7 @@ const TopDoctors = () => {
       </p>
 
       <div className="w-full grid grid-cols-auto gap-4 pt-5 gap-y-6 px-3 sm:px-0">
-        {doctors.slice(0, 12).map((item, index) => (
+        {doctors.slice(0, 8).map((item, index) => (
           <motion.div
             key={index}
             custom={index}
