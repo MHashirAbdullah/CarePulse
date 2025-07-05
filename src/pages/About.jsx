@@ -3,12 +3,13 @@ import { motion } from "framer-motion";
 import { assets } from "../assets/assets_frontend/assets";
 
 const About = () => {
+  const DEFAULT_DURATION = 0.4;
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
       transition: {
-        duration: 0.6,
+        duration: DEFAULT_DURATION,
         staggerChildren: 0.15
       }
     }
@@ -20,7 +21,7 @@ const About = () => {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.6,
+        duration: DEFAULT_DURATION,
         ease: "easeOut"
       }
     }
@@ -33,7 +34,7 @@ const About = () => {
       x: 0,
       scale: 1,
       transition: {
-        duration: 0.8,
+        duration: DEFAULT_DURATION,
         ease: "easeOut"
       }
     }
@@ -45,7 +46,7 @@ const About = () => {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.6,
+        duration: DEFAULT_DURATION,
         ease: "easeOut"
       }
     },

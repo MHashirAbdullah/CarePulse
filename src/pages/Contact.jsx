@@ -3,12 +3,13 @@ import { motion } from "framer-motion";
 import { assets } from "../assets/assets_frontend/assets";
 
 const Contact = () => {
+  const DEFAULT_DURATION = 0.4;
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
       transition: {
-        duration: 0.6,
+        duration: DEFAULT_DURATION,
         staggerChildren: 0.2
       }
     }
@@ -20,7 +21,7 @@ const Contact = () => {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.6,
+        duration: DEFAULT_DURATION,
         ease: "easeOut"
       }
     }
@@ -32,7 +33,7 @@ const Contact = () => {
       opacity: 1,
       x: 0,
       transition: {
-        duration: 0.8,
+        duration: DEFAULT_DURATION,
         ease: "easeOut"
       }
     }
